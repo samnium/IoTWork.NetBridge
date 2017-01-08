@@ -49,7 +49,7 @@ $(TARGET_LIB):$(OBJSCXX)
 	$(CXX) ${CFLAGS} $^
 
 install:
-	cp -f ${TARGET_LIB} /usr/local/lib
+	sudo cp -f ${TARGET_LIB} /usr/local/lib
 
 indent:
 	astyle -s3 -S -Y -f -p -H -y -k2 -n -v -z2 *.cpp	
